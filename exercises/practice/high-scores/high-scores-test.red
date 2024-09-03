@@ -85,45 +85,4 @@ foreach c-case canonical-cases [
 	test c-case/description case-code
 ]
 
-
-test "Latest score after personal top scores" [
-	scoresList: [70 50 20 30]
-
-	personal-top-three scoresList
-	
-	expect 30 [
-		latest scoresList
-	]
-]
-
-test "Scores after personal top scores" [
-	scoresList: [70 50 20 30]
-
-	personal-top-three scoresList
-	
-	expect [70 50 20 30] [
-		scores scoresList
-	]
-]
-
-test "Latest score after personal best" [
-	scoresList: [20 70 15 25 30]
-
-	personal-best scoresList
-	
-	expect 30 [
-		latest scoresList
-	]
-]
-
-test "Scores after personal best" [
-	scoresList: [20 70 15 25 30]
-
-	personal-best scoresList
-	
-	expect [20 70 15 25 30] [
-		scores scoresList
-	]
-]
-
 test-results/print
