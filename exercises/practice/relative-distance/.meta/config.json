@@ -1,0 +1,17 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "relative-distance.red"
+    ],
+    "test": [
+      "relative-distance-test.red"
+    ],
+    "example": [
+      ".meta/example.red"
+    ]
+  },
+  "blurb": "Given a family tree, calculate the degree of separation."
+}
